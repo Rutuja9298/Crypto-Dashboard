@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Price Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🪙 Crypto Price Dashboard</h1>
+    
+    <input type="text" id="cryptoInput" placeholder="Enter cryptocurrency (e.g. bitcoin)" />
+    <button onclick="getCryptoData()">Search</button>
+    
+    <div id="result">
+      <h2 id="cryptoName"></h2>
+      <p id="cryptoPrice"></p>
+      <canvas id="priceChart"></canvas>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
